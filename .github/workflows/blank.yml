@@ -4,7 +4,7 @@ name: Release Drafter
 on:
   pull_request:
     branches:
-      - release
+      - main
     types: [opened, reopened]
 
 jobs:
