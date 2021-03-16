@@ -1,4 +1,4 @@
-name: Release Drafter
+name: Release Botticelli
 
 on:
   pull_request:
