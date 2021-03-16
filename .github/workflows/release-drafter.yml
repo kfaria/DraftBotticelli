@@ -1,11 +1,11 @@
-name: Release Drafter
+name: Release Botticelli
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
-  workflow_dispatch:
+    types: [closed]
 jobs:
   update_release_draft:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: release-drafter/release-drafter@v5
